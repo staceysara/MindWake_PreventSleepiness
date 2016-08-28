@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.awake.FirstFragment"
+    android:background="#3F51B5">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="0dp" android:layout_height="0dp"
+        android:text="first Fragment" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutGraphView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Status monitoring layout -->
+        <LinearLayout
+            android:id="@+id/layout_monitoring"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!-- Tab menu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:orientation="horizontal"
+                android:gravity="right|top"
+                >
+            </LinearLayout>
+
+            <!-- Connection info -->
+            <LinearLayout
+                android:id="@+id/layout_conn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_conn"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/text_conn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bt_dialog2"
+                    android:background="@drawable/dialog_icon" />
+            </LinearLayout>
+
+
+            <!-- Rendering frequency -->
+            <TextView
+                android:id="@+id/text_title_render1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="@string/title_freq"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+            <view class="com.example.awake.RenderingView"
+                android:id="@+id/layout_raw"
+                android:layout_width="match_parent"
+                android:layout_height="900px"
+                android:orientation="vertical"
+                android:background="#ffffff" >
+            </view>
+            <TextView
+                android:id="@+id/text_freq_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="#ffffff" />
+
+
+            <!-- Rendering analyzed value -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="@string/title_value"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+            <view class="com.example.awake.RenderingView"
+                android:id="@+id/layout_value"
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:orientation="vertical"
+                android:background="#ffffff" >
+            </view>
+            <TextView
+                android:id="@+id/text_value_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="#ffffff" />
+
+
+            <!--&lt;!&ndash; System info &ndash;&gt;-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/layout_system_info"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dip"-->
+            <!--android:orientation="horizontal"-->
+            <!-->-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/title_sys_info"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="12sp" />-->
+            <!--<TextView-->
+            <!--android:id="@+id/text_system"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="12sp" />-->
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <!-- Controller layout -->
+        <!-- Status monitoring layout -->
+        <LinearLayout
+            android:id="@+id/layout_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!-- Tab menu -->
+
+            <!-- Control buttons -->
+
+
+            <!-- Connection info -->
+            <ScrollView
+                android:id="@+id/layout_logs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text_logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    />
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

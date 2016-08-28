@@ -1,0 +1,2 @@
+//include ':app', ':ThinkGear', ':library', ':library', ':library1'
+include ':app', ':ThinkGear'

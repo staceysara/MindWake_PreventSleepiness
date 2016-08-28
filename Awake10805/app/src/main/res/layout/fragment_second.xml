@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.awake.SecondFragment"
+    android:background="#3F51B5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_controller"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!-- Tab menu -->
+
+
+            <!-- Control buttons -->
+
+
+            <!-- Connection info -->
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/listView"
+                android:layout_weight="1.68" />
+            <!--android:layout_weight="0.32"--> />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/layout_controller"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="당신이 자주 조는 환경은 다음과 같습니다."
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                />
+            <ImageView
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_frequentWeather"
+                android:src="@drawable/d01d"
+                android:layout_below="@+id/textView10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="기온"
+                android:textColor="#ffffff"
+                android:id="@+id/tv_frequentTemp"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/iv_frequentWeather" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- Status monitoring layout -->
+
+
+
+    <!-- Controller layout -->
+    <!-- Status monitoring layout -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET API"
+        android:id="@+id/bt_getAPI"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>
